@@ -1,0 +1,49 @@
+.specifics {
+    @extend %section;
+
+    &__container {
+        @extend %container;
+    }
+}
+
+.specifics__header {
+    @extend %is-hidden;
+}
+
+.specifics__list {
+    display: flex;
+}
+
+.specifics__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.specifics__thumb {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: $background-icon-quality;
+}
+
+.specifics__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.specifics__desc {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+}

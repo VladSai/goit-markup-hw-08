@@ -1,0 +1,71 @@
+.footer {
+    padding: 60px 0;
+    background-color: $background-color;
+
+
+    &__container {
+        @extend %container;
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__logo {
+    display: block;
+    color: $white-color;
+}
+
+.footer__address {
+    display: inline-flex;
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer__list {
+    display: block;
+    margin-top: 20px;
+}
+
+.footer__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__link {
+    text-decoration: none;
+    color: $mail-tel-color;
+
+    &--white {
+        color: $white-color;
+    }
+}
+
+.social {
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 93px;
+}
+
+.social__title,
+.signup__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.social-net__link--revers-bg {
+    background-color: $contacts-social-link-bg;
+}
+
+.social-net__icon--white-color {
+    fill: $white-color;
+}
